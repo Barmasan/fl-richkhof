@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/app/libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/app/libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/app/libs/slick/slick.css">
+    <link rel="stylesheet" href="assets/app/libs/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="assets/app/css/fonts.css">
+    <link rel="stylesheet" href="assets/app/css/common.css">
+
+    <title>Главная</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="wrapper">
+                <div class="logo"></div>
+                <div class="inner">
+                    <div class="contacts">
+                        <div class="item">
+                            <div class="icon phone-icon"></div>
+                            <a href="">(812) 985-84-14</a>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="item">
+                            <div class="icon mail-icon"></div>
+                            <a href="">info@richhof.ru</a>
+                        </div>
+                    </div>
+                    <a href="#auth-modal" id="auth" class="button black-button">Войти</a>
+                    <div id="auth-modal" style="display:none">
+                        <form action="">
+                            <div class="header">Авторизация</div>
+                            <input type="text" placeholder="Логин">
+                            <input type="password" placeholder="Пароль">
+                            <input type="submit" class="button black-button" value="Войти">
+                            <a href="" class="forgot-password">Забыли пароль?</a>
+                        </form>
+                    </div>
+                    <div class="burger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <div class="wrapper">
+                <div class="sidebar">
+                    <div class="header">
+                        Личный кабинет
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                              <button class="button black-button" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Тесты
+                              </button>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <button id="test-media" class="item button" type="button">
+                                Тест с медиа
+                            </button>
+                            <button id="test" class="item button" type="button">
+                                Тест без медиа
+                            </button>
+                            <button id="slider" class="item button" type="button">
+                                Слайдер
+                            </button>
+                            <button id="table-stage" class="item button" type="button">
+                                Таблица
+                            </button>
+                          </div>
+                        </div>
+                    </div>
+                    <button id="reg" class="button black-button">Зарегистрировать</button>
+                </div>
+                <div class="content">
+                    <div class="stage slider-wrapper">
+                        <div class="slider">
+                            <div class=""><img src="assets/app/content/img/slider.png" alt=""></div>
+                            <div class=""><img src="assets/app/content/img/slider.png" alt=""></div>
+                            <div class=""><img src="assets/app/content/img/slider.png" alt=""></div>
+                            <div class=""><img src="assets/app/content/img/slider.png" alt=""></div>
+                            <div class=""><img src="assets/app/content/img/slider.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="stage registration">
+                        <form action="">
+                            <div class="caption">Если Вы уже зарегистрированы, перейдите по вкладке Войти в меню слева.</div>
+                            <div class="header">Основные данные</div>
+                            <div class="input">
+                                <div class="title">Имя</div>
+                                <input type="text" placeholder="Имя">
+                            </div>
+                            <div class="input">
+                                <div class="title">Фамилия</div>
+                                <input type="text" placeholder="Фамилия">
+                            </div>
+                            <div class="input">
+                                <div class="title">Почта</div>
+                                <input type="text" placeholder="Почта">
+                            </div>
+                            <div class="input">
+                                <div class="title">Телефон</div>
+                                <input type="text" placeholder="Телефон">
+                            </div>
+                            <div class="input">
+                                <div class="title">Организация</div>
+                                <input type="text" placeholder="Организация">
+                            </div>
+                            <div class="header">Ваш пароль</div>
+                            <div class="input">
+                                <div class="title">Пароль</div>
+                                <input type="password" placeholder="Введите пароль">
+                            </div>
+                            <div class="input">
+                                <div class="title">Подтверждение</div>
+                                <input type="password" placeholder="Подтвердите пароль">
+                            </div>
+                            <div class="buttons">
+                                <button class="button black-button">Завершить регистрацию</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="stage test test-media">
+                        <div class="caption">Проверка знаний по Raumplus. Выберите один вариант, который считаете наиболее правильным</div>
+                        <div class="questions">
+                            <div class="question-wrapper">
+                                <div class="inner">
+                                    <div class="question">Когда была основана компания ООО “Раумплюс”?</div>
+                                    <div class="answer-options">
+                                        <div class="answer">1985 г.</div>
+                                        <div class="answer">1985 г.</div>
+                                        <div class="answer">1985 г.</div>
+                                        <div class="answer">1985 г.</div>
+                                        <div class="answer selected">1985 г.</div>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a href="assets/app/img/samples/image.jpg" data-fancybox="images" data-caption="My caption">
+                                        <img src="assets/app/img/samples/image.jpg" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="question-wrapper">
+                                <div class="inner">
+                                    <div class="question">Когда была основана компания ООО “Раумплюс”?</div>
+                                    <div class="answer-options">
+                                        <div class="answer">1985 г.</div>
+                                        <div class="answer">1985 г.</div>
+                                        <div class="answer">1985 г.</div>
+                                        <div class="answer">1985 г.</div>
+                                        <div class="answer selected">1985 г.</div>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a href="https://www.youtube.com/watch?v=S_dfq9rFWAE" data-fancybox>
+                                        <img src="assets/app/img/samples/yt.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="buttons">
+                                    <button class="button">Назад</button>
+                                    <button class="button black-button">Далее</button>
+                                </div>
+                                <div class="counter">2/5</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stage test test-no-media">
+                        <div class="caption">Проверка знаний по Raumplus. Выберите один вариант, который считаете наиболее правильным</div>
+                        <div class="questions">
+                            <div class="question-wrapper">
+                                <div class="inner">
+                                    <div class="question">Когда была основана компания ООО “Раумплюс”?</div>
+                                    <div class="answer-options">
+                                        <div class="answer">1985 г.</div>
+                                        <div class="answer">1985 г.</div>
+                                        <div class="answer">1985 г.</div>
+                                        <div class="answer">1985 г.</div>
+                                        <div class="answer selected">1985 г.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question-wrapper">
+                                <div class="inner">
+                                    <div class="question">Когда была основана компания ООО “Раумплюс”?</div>
+                                    <div class="answer-options">
+                                        <div class="answer">1985 г.</div>
+                                        <div class="answer">1985 г.</div>
+                                        <div class="answer">1985 г.</div>
+                                        <div class="answer">1985 г.</div>
+                                        <div class="answer selected">1985 г.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="buttons">
+                                    <button class="button">Назад</button>
+                                    <button class="button black-button">Далее</button>
+                                </div>
+                                <div class="counter">2/5</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stage table-stage">
+                        <table class="table">
+                            <thead class="thead-dark">
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          
+                          <table class="table">
+                            <thead class="thead-light">
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+
+
+
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="assets/app/libs/jquery/jquery-3.5.1.min.js"></script>
+    <script src="assets/app/libs/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/app/libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="assets/app/libs/slick/slick.min.js"></script>
+
+
+    <script src="assets/app/js/slider.js"></script>
+    <script src="assets/app/js/modal-popup.js"></script>
+    <script src="assets/app/js/navigation.js"></script>
+</body>
+</html>
